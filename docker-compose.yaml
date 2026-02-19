@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  anggris-lab-web:
+    build: .
+    container_name: anggris-lab
+    ports:
+      - "8111:80" # Akses di localhost:8080
+    restart: always
+    environment:
+      - NODE_ENV=production
